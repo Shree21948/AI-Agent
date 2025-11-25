@@ -1,0 +1,5 @@
+google-adk
+google-genai
+pdfminer.six
+python-docx
+requests
