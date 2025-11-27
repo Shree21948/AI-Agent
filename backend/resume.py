@@ -9,7 +9,7 @@ import os
 import json
 from typing import List, Optional
 
-from pdfminer.high_level import extract_text as extract_pdf
+from pdfminer.high_level import extract_text as extract_pdf #extract_text is a function rename to extract_pdf
 from docx import Document
 
 from pydantic import BaseModel, Field
@@ -170,23 +170,3 @@ def run_resume_agent(file_path: str) -> dict:
     data["raw_text"] = resume_text
     return data
 
-
-
-
-# --------------------------
-# 6. Manual Run With User Input
-# --------------------------
-
-if __name__ == "__main__":
-    file_path = input("Enter the resume file path: ").strip()
-
-    try:
-        result = run_resume_agent(file_path)
-
-        print("\n===== Extracted Resume Info =====\n")
-        print(json.dumps(result, indent=2, ensure_ascii=False))
-
-    except Exception as e:
-        print("\n❌ Error while running resume agent:")
-        print(e)
-        print("\n(If this keeps happening, the issue is likely with the LLM output or schema setup, not your file path.)")
