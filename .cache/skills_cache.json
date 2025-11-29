@@ -1,0 +1,12 @@
+{
+  "Data Scientist": {
+    "timestamp": "2025-11-26T21:27:45.295205",
+    "data": {
+      "role": "Data Scientist",
+      "top_skills": [],
+      "data_source": "Adzuna (90d, 150 jobs)",
+      "confidence": 0.95,
+      "cache_ttl_seconds": 86400
+    }
+  }
+}
